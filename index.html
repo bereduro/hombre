@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hombre</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://i.pinimg.com/originals/41/c8/cd/41c8cd0b777e9d7f5bdd4f33b6bfae60.gif);
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo con opacidad (valor alpha de 0.8) */
+}
+
+header {
+  background-color: #009900a8; /* Hereda el color del encabezado del login.css */
+  color: white; /* Hereda el color del texto del encabezado del login.css */
+  text-align: center;
+  padding: 20px 0;
+  border-bottom-left-radius: 100px; /* Bordes redondeados en la esquina inferior izquierda */
+  border-bottom-right-radius: 100px; /* Bordes redondeados en la esquina inferior derecha */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white; /* Hereda el color del texto del menú del login.css */
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 100px; /* Bordes redondeados */
+  overflow: hidden; /* Evita que las esquinas redondeadas se vean mal cuando las imágenes son más grandes */
+}
+
+.product img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px; /* Bordes redondeados */
+}
+
+.product img {
+    max-width: 100%; /* Hace que las imágenes no se estiren más allá del tamaño del contenedor */
+    height: auto; /* Hace que las imágenes mantengan la proporción de aspecto */
+}
+
+.product h2 {
+    color: white; /* Cambia #ff0000 al color deseado */
+}
+
+.price {
+  font-size: 1.2em;
+  color: #009900; /* Hereda el color del precio del login.css */
+}
+
+#slideshow {
+    width: 100%;
+    max-width: 400px; /* Limita el ancho máximo del slideshow */
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 100px; /* Bordes redondeados */
+}
+
+#slideshow img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#slideshow img.active {
+    opacity: 1;
+}
+
+button {
+  background-color: #009900; /* Hereda el color de fondo del botón del login.css */
+  color: white; /* Hereda el color del texto del botón del login.css */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 100px; /* Bordes redondeados */
+}
+
+button:hover {
+  background-color: yellow; /* Hereda el color de fondo al pasar el mouse del login.css */
+  color: black;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .product {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 20px 0; /* Espacio entre productos */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HOMBRES</h1>
+</header>
+
+<br>
+<br>
+<br>
+<nav>
+  <ul>
+    <li><a href="https://bereduro.github.io/login/index.html">Iniciar Sesión</a></li>
+    <li><a href="https://bereduro.github.io/mujer/index.html">Mujer</a></li>
+    
+    <li><a href="https://bereduro.github.io/carrito/index.html">Carrito</a></li>
+    <li><u><a href="https://bereduro.github.io/contacto/">Contacto</a></u></li>
+    
+</nav>
+
+<main>
+  <section class="product">
+    <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_411,c_limit/73300ab8-e29d-48d7-971c-012c85483422/air-max-dn-zapatillas-SBVfbL.png" alt="Zapato 1">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$99</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/21d38052-598b-44f6-a857-123c9f72b015/air-force-1-07-zapatillas-CFVMS0.png" alt="Zapato 2">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$124</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/dunk-low-retro-zapatillas-wwlDHh.png" alt="Zapato 3">
+    <h2>Zapatilla</h2>
+    <p class="price">$140</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/84fdcee0-c38c-443c-bfef-2c5148438bd9/air-max-plus-utility-zapatillas-HkwSWp.png" alt="Zapato 4">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$88</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/ffb4b75d-d336-4023-9377-994c0e593beb/air-force-1-zapatillas-nino-a-nCmX8T.png" alt="Zapato 5">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$79</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/erzfadfpnzgkxt0gn2ya/air-max-plus-zapatillas-1gMZsK.png" alt="Zapato 6">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$159</p>
+    <button>Agregar al carrito</button>
+  </section>
+  
+  <section class="product">
+    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/db683a69-e9ad-476b-972e-a81b8a533df9/air-max-plus-zapatillas-LWzXNs.png" alt="Zapato 7">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$160</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e89d8eb1-9b4c-4956-ace1-d4df7a5dc3c3/air-max-plus-drift-zapatillas-l1Lskt.png" alt="Zapato 8">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$99</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/52b2d9b7-ae31-4599-9518-9e1c97460656/air-max-plus-drift-zapatillas-tSvfqV.png" alt="Zapato 9">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$88</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  <section class="product">
+    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/524a838f-2358-4bb6-ae3b-5b075e87c12d/court-vision-low-zapatillas-qNJnrx.png" alt="Zapato 10">
+    <h2>Zapato Deportivo</h2>
+    <p class="price">$140</p>
+    <button>Agregar al carrito</button>
+  </section>
+
+  
+
+ 
+  <!-- Puedes agregar más productos aquí -->
+
+</main>
+
+<footer>
+  <p style="color: #ccc;">&copy; 2024 Brody Deiby and Jhomar Edilson</p>
+</footer>
+
+</body>
+</html>
